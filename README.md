@@ -16,6 +16,10 @@
   <a href="./README.md"><img alt="README in English" src="https://img.shields.io/badge/English-d9d9d9"></a>
   <a href="./README_CN.md"><img alt="简体中文版自述文件" src="https://img.shields.io/badge/简体中文-d9d9d9"></a>
 </p>
+<p align="center">
+  <a href="X"><img alt="https://x.com/LemonAI_cc" src="https://img.shields.io/twitter/follow/LemonAI_cc"></a>
+  <a href="YouTube"><img alt="https://www.youtube.com/channel/UCmNFiz2sWIAnmKOz6OmcnuQ"src="https://img.shields.io/youtube/channel/views/UCmNFiz2sWIAnmKOz6OmcnuQ"></a>
+</p>
 
 **Lemon AI​** is the first **​full-stack, open-source, agentic AI framework**, offering a **​fully local alternative​** to platforms like **Manus & Genspark AI. It features an integrated Code Interpreter VM sandbox for safe execution**.​​
 
