@@ -148,6 +148,7 @@ docker run -it --rm --pull=always \
 
 我们欢迎您为 Lemon AI 作出贡献，以帮助改善 Lemon AI。包括：提交代码、问题、新想法，或分享您基于 Lemon AI创建的有趣且有用的 AI 应用程序。同时，我们也欢迎您在不同的活动、会议和社交媒体上分享 Lemon AI。
 
+* [GitHub Discussion](https://github.com/hexdocom/lemonai/discussions). 👉：分享您的应用程序并与社区交流。
 * [GitHub Issues](https://github.com/hexdocom/lemon/issues)。👉：使用 Lemon AI 时遇到的错误和问题，请参阅贡献指南
 * 电子邮件支持👉：关于使用 Lemon的问题。
 * [X(Twitter)](https://x.com/LemonAI_cc)。👉：分享您的应用程序并与社区交流。
