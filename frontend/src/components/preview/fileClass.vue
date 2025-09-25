@@ -7,7 +7,7 @@
         <div class="content">
             <div class="classList" v-if="!batchDownload">
                 <div class="header">
-                    <h1 class="title">{{ $t('lemon.fileExplorer.allFilesInTask') }}</h1>
+                    <h1 class="title">{{ $t('sodai.fileExplorer.allFilesInTask') }}</h1>
                     <div class="btns">
                         <div class="svg">
                             <downloadSvg @click="handleBatchDownload"
@@ -22,12 +22,12 @@
                     <div class="classTitle">
                         <div v-for="type in fileTypes" :key="type" class="classBtn"
                             :class="chooseClassType === type ? 'active' : ''" @click="chooseClassType = type">
-                            {{ $t(`lemon.fileExplorer.fileTypes.${type}`) }}
+                            {{ $t(`sodai.fileExplorer.fileTypes.${type}`) }}
                         </div>
                     </div>
                     <div class="classFiles" v-if="!clickDisable">
                         <div v-for="(group, time) in fileListFilterByTimeAndType" :key="time" class="timeGroup">
-                            <h3 class="timeTitle">{{ $t(`lemon.fileExplorer.timeGroups.${time}`) }}</h3>
+                            <h3 class="timeTitle">{{ $t(`sodai.fileExplorer.timeGroups.${time}`) }}</h3>
                             <div class="fileList">
                                 <div v-for="file in group" :key="file.id" class="fileItem"
                                     @click="handleOpenFile(file)">
@@ -52,10 +52,10 @@
                                                 <template #title>
                                                     <div class="custom-tooltip">
                                                         <div class="svg-tooltip" @click="handlePreview(file)">
-                                                            <clickSvg /> {{ $t('lemon.fileExplorer.preview') }}
+                                                            <clickSvg /> {{ $t('sodai.fileExplorer.preview') }}
                                                         </div>
                                                         <div class="svg-tooltip" @click="handleFileDownload(file)">
-                                                            <downloadSvgDown /> {{ $t('lemon.fileExplorer.download') }}
+                                                            <downloadSvgDown /> {{ $t('sodai.fileExplorer.download') }}
                                                         </div>
                                                     </div>
                                                 </template>
@@ -72,7 +72,7 @@
                             <fileEmptySvg />
                         </div>
                         <div class="emptyText">
-                            <span>{{ $t('lemon.fileExplorer.noContent') }}</span>
+                            <span>{{ $t('sodai.fileExplorer.noContent') }}</span>
                         </div>
                     </div>
                 </div>
@@ -83,15 +83,15 @@
                 <div class="header">
                     <div class="selectAll" @click="selectAll">
                         <a-checkbox v-model:checked="selectedAll" :indeterminate="isIndeterminate" />
-                        <span>{{ $t('lemon.fileExplorer.selectAll') }}</span>
+                        <span>{{ $t('sodai.fileExplorer.selectAll') }}</span>
                     </div>
-                    <span class="cancel" @click="handleCancelBatchDownload">{{ $t('lemon.fileExplorer.cancel') }}</span>
+                    <span class="cancel" @click="handleCancelBatchDownload">{{ $t('sodai.fileExplorer.cancel') }}</span>
                 </div>
                 <!-- 文件列表 -->
                 <div class="batchMain">
                     <div class="batchMainContent">
                         <div v-for="(group, time) in fileListFilterByTimeAndType" :key="time" class="timeGroup">
-                            <h3 class="timeTitle">{{ $t(`lemon.fileExplorer.timeGroups.${time}`) }}</h3>
+                            <h3 class="timeTitle">{{ $t(`sodai.fileExplorer.timeGroups.${time}`) }}</h3>
                             <div class="fileList">
                                 <div v-for="file in group" :key="file.id" class="fileItem">
                                     <a-checkbox v-model:checked="file.selected" @change="updateSelectedAll" />
@@ -113,7 +113,7 @@
                     <a-button type="primary" @click="confirmBatchDownload" class="btnDownload"
                         :class="clickDowload ? 'disableDownload' : 'enableDownload'">
                         <downloadSvg class="svg" />
-                        <span class="span">{{ $t('lemon.fileExplorer.batchDownload') }}</span>
+                        <span class="span">{{ $t('sodai.fileExplorer.batchDownload') }}</span>
                     </a-button>
                 </div>
             </div>
@@ -277,13 +277,13 @@ function groupFilesByTime(files) {
 function formatTimestamp(timestamp) {
   const date = new Date(timestamp)
   const weekdays = [
-    t('lemon.fileExplorer.weekdays.sunday'),
-    t('lemon.fileExplorer.weekdays.monday'),
-    t('lemon.fileExplorer.weekdays.tuesday'),
-    t('lemon.fileExplorer.weekdays.wednesday'),
-    t('lemon.fileExplorer.weekdays.thursday'),
-    t('lemon.fileExplorer.weekdays.friday'),
-    t('lemon.fileExplorer.weekdays.saturday')
+    t('sodai.fileExplorer.weekdays.sunday'),
+    t('sodai.fileExplorer.weekdays.monday'),
+    t('sodai.fileExplorer.weekdays.tuesday'),
+    t('sodai.fileExplorer.weekdays.wednesday'),
+    t('sodai.fileExplorer.weekdays.thursday'),
+    t('sodai.fileExplorer.weekdays.friday'),
+    t('sodai.fileExplorer.weekdays.saturday')
   ]
   return weekdays[date.getDay()]
 }

@@ -16,17 +16,17 @@
               <div class="custom-tooltip">
                 <div class="svg-tooltip" @click="handleFileDownload(file); downloadTooltipVisible = false">
                   <downloadSvgDown />
-                  {{ $t('lemon.fullPreview.download') }}
+                  {{ $t('sodai.fullPreview.download') }}
                 </div>
                 <div class="svg-tooltip" v-if="canBeMd" @click="handleExportPDF(); downloadTooltipVisible = false">
                   <pdfExportSvg />
-                  {{ $t('lemon.fullPreview.exportToPDF') }}
+                  {{ $t('sodai.fullPreview.exportToPDF') }}
                 </div>
 
                 <!-- <div class="line"></div> -->
                 <!-- <div class="svg-tooltip"
                     @click="handleSaveToGoogleDrive(); downloadTooltipVisible = false">
-                    <googleDriverSvg /> {{ $t('lemon.fullPreview.saveToGoogleDrive') }}
+                    <googleDriverSvg /> {{ $t('sodai.fullPreview.saveToGoogleDrive') }}
                 </div> -->
 
               </div>
@@ -38,7 +38,7 @@
 
           <a-tooltip v-if="!isFullPreview" :arrow='false' overStyle="font-size:10px" overlayClassName="tooltip-tips">
             <template #title>
-              <span class="tips-text">{{ $t('lemon.fullPreview.maximize') }}</span>
+              <span class="tips-text">{{ $t('sodai.fullPreview.maximize') }}</span>
             </template>
             <button class="icon-bt" @click="isFullPreview = true">
               <maxMizeSvg />
@@ -46,7 +46,7 @@
           </a-tooltip>
           <a-tooltip v-if="isFullPreview" :arrow='false' overStyle="font-size:10px" overlayClassName="tooltip-tips">
             <template #title>
-              <span class="tips-text">{{ $t('lemon.fullPreview.minimize') }}</span>
+              <span class="tips-text">{{ $t('sodai.fullPreview.minimize') }}</span>
             </template>
             <button class="icon-bt" @click="isFullPreview = false">
               <minMizeSvg />
@@ -56,7 +56,7 @@
 
           <a-tooltip :arrow='false' overStyle="font-size:10px" overlayClassName="tooltip-tips">
             <template #title>
-              <span class="tips-text">{{ $t('lemon.fullPreview.previous') }}</span>
+              <span class="tips-text">{{ $t('sodai.fullPreview.previous') }}</span>
             </template>
             <button class="icon-bt" @click="currentIndex--" :class="currentIndex > 0 ? null : 'disableBtn'">
               <leftSvg />
@@ -64,7 +64,7 @@
           </a-tooltip>
           <a-tooltip :arrow='false' overStyle="font-size:10px" overlayClassName="tooltip-tips">
             <template #title>
-              <span class="tips-text">{{ $t('lemon.fullPreview.next') }}</span>
+              <span class="tips-text">{{ $t('sodai.fullPreview.next') }}</span>
             </template>
             <button class="icon-bt" @click="currentIndex++"
               :class="currentIndex < fileList.length - 1 ? null : 'disableBtn'">
@@ -77,16 +77,16 @@
               <div class="custom-tooltip more-tooltip">
                 <div class="svg-tooltip" @click="handleCopyContent(content); moreOptionsTooltipVisible = false">
                   <copySvg />
-                  {{ $t('lemon.fullPreview.copy') }}
+                  {{ $t('sodai.fullPreview.copy') }}
                 </div>
                 <div class="svg-tooltip" v-if="rendering" @click="rendering = false; moreOptionsTooltipVisible = false">
                   <codeSvg />
-                  {{ $t('lemon.fullPreview.code') }}
+                  {{ $t('sodai.fullPreview.code') }}
                 </div>
                 <div class="svg-tooltip" v-if="canBeMd && !rendering || canBeHtml && !rendering"
                   @click="rendering = true; moreOptionsTooltipVisible = false">
                   <eyeSvg />
-                  {{ $t('lemon.fullPreview.preview') }}
+                  {{ $t('sodai.fullPreview.preview') }}
                 </div>
               </div>
             </template>
@@ -96,7 +96,7 @@
           </a-tooltip>
           <a-tooltip :arrow='false' overStyle="font-size:10px" overlayClassName="tooltip-tips">
             <template #title>
-              <span class="tips-text">{{ $t('lemon.fullPreview.close') }}</span>
+              <span class="tips-text">{{ $t('sodai.fullPreview.close') }}</span>
             </template>
             <button class="icon-bt icon-tip" @click="isFullPreview = false; fullPreviewVisable = false">
               <closeSvg />
@@ -131,17 +131,17 @@
               </div>
               <div class="file-info">
                 <div class="file-name">{{ file.filepath.split("/").pop().split("\\").pop() }}</div>
-                <div class="file-type">{{ $t('lemon.fullPreview.fileTypePresentation') }}</div>
+                <div class="file-type">{{ $t('sodai.fullPreview.fileTypePresentation') }}</div>
               </div>
             </div>
           </div>
           <div class="tips">
-            {{ $t('lemon.fullPreview.cannotPreviewFormat') }}<br>
-            {{ $t('lemon.fullPreview.downloadToView') }}
+            {{ $t('sodai.fullPreview.cannotPreviewFormat') }}<br>
+            {{ $t('sodai.fullPreview.downloadToView') }}
           </div>
           <a-button class="download-bt" @click="handleFileDownload(file)">
             <downloadSvg />
-            <span class="text">{{ $t('lemon.fullPreview.download') }}</span>
+            <span class="text">{{ $t('sodai.fullPreview.download') }}</span>
           </a-button>
         </div>
 
@@ -287,22 +287,22 @@ const canOfficePreview = computed(() => {
 // Copy content
 function handleCopyContent(content) {
   if (!content || content.trim() === '') {
-    message.warning(t('lemon.fullPreview.noContentToCopy'))
+    message.warning(t('sodai.fullPreview.noContentToCopy'))
     return
   }
 
   if (!navigator.clipboard) {
-    message.error(t('lemon.fullPreview.clipboardNotSupported'))
+    message.error(t('sodai.fullPreview.clipboardNotSupported'))
     return
   }
 
   navigator.clipboard.writeText(content)
     .then(() => {
-      message.success(t('lemon.fullPreview.contentCopied'))
+      message.success(t('sodai.fullPreview.contentCopied'))
     })
     .catch((err) => {
       // console.error('Copy failed:', err)
-      message.error(t('lemon.fullPreview.copyFailed'))
+      message.error(t('sodai.fullPreview.copyFailed'))
     })
 }
 
@@ -365,12 +365,12 @@ function handleExportPDF() {
   };
 
   html2pdf().set(opt).from(element).save();
-  message.info(t('lemon.fullPreview.exportPDFPending'));
+  message.info(t('sodai.fullPreview.exportPDFPending'));
 }
 
 // // Save to Google Drive
 // function handleSaveToGoogleDrive() {
-//     message.info(t('lemon.fullPreview.saveToGoogleDrivePending'))
+//     message.info(t('sodai.fullPreview.saveToGoogleDrivePending'))
 // }
 
 

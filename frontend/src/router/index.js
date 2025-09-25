@@ -5,19 +5,19 @@ const routes = [
   {
     path: "/",
     name: "app",
-    component: () => import(/* webpackChunkName: "lemon" */ "@/view/lemon/index.vue"),
+    component: () => import(/* webpackChunkName: "sodai" */ "@/view/sodai/index.vue"),
     meta: { verify: true }
   },
   {
     path:"/share/:id?",
     name: "share",
-    component: () => import(/* webpackChunkName: "lemon" */ "@/view/share/index.vue"),
+    component: () => import(/* webpackChunkName: "sodai" */ "@/view/share/index.vue"),
     meta: { verify: true }
   },
   {
-    path: "/lemon/:id?",
-    name: "lemon",
-    component: () => import(/* webpackChunkName: "lemon" */ "@/view/lemon/index.vue"),
+    path: "/sodai/:id?",
+    name: "sodai",
+    component: () => import(/* webpackChunkName: "sodai" */ "@/view/sodai/index.vue"),
     meta: { verify: true }
   },
   {

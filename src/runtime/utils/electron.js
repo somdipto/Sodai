@@ -2,7 +2,7 @@
 const fs = require('fs');
 const resolve = require('path').resolve;
 const resourcesPath = process.resourcesPath;
-let LEMON_AI_PATH = process.env.LEMON_AI_PATH;
+let SODAI_PATH = process.env.SODAI_PATH;
 
 function inDockerEnvironment() {
   try {
@@ -13,7 +13,7 @@ function inDockerEnvironment() {
   }
 }
 if (inDockerEnvironment()) {
-  LEMON_AI_PATH = '/'
+  SODAI_PATH = '/'
 }
 
 const getFilepath = (dir = 'database', filename) => {
@@ -23,8 +23,8 @@ const getFilepath = (dir = 'database', filename) => {
     filepath = resolve(resourcesPath, dir, filename);
   }
 
-  if (LEMON_AI_PATH) {
-    filepath = resolve(LEMON_AI_PATH, dir, filename);
+  if (SODAI_PATH) {
+    filepath = resolve(SODAI_PATH, dir, filename);
   }
   console.log('filepath', filepath);
   return filepath;
@@ -38,8 +38,8 @@ const getDirpath = (dir) => {
     filepath = resolve(resourcesPath, dir);
   }
 
-  if (LEMON_AI_PATH) {
-    filepath = resolve(LEMON_AI_PATH, dir);
+  if (SODAI_PATH) {
+    filepath = resolve(SODAI_PATH, dir);
   }
   return filepath;
 }

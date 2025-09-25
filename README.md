@@ -2,7 +2,7 @@
 # Sodai - Full-stack, Open-source, Agentic AI Framework
 
 <div align=center>
-  <img src="./public/img/Lemon_logo.png" width="400">
+  <img src="./public/img/sodai_logo.png" width="400">
 </div>
 
 Sodai is the first **full-stack, open-source, agentic AI framework**, offering a **fully local alternative** to platforms like **Manus & Genspark AI**. It features an integrated Code Interpreter VM sandbox for safe execution.

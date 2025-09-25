@@ -1,7 +1,7 @@
 <template>
   <div class="sidebar-header">
     <div class="icon">
-      <img src="@/assets/image/lemon.jpg" alt="" />
+      <img src="@/assets/image/sodai.jpg" alt="" />
       Sodai
     </div>
     <div class="sidebar-header-btn">

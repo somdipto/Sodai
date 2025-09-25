@@ -2,13 +2,13 @@
   <div class="welcome-screen">
     <div class="welcome-header">
       <!-- <div class="icon"> 
-        <img src="@/assets/image/lemon.jpg" alt="" />
+        <img src="@/assets/image/sodai.jpg" alt="" />
         Sodai
       </div> -->
     </div>
     <div class="welcome-content">
-      <h1>{{ $t("lemon.welcome.greeting", { username }) }}</h1>
-      <p>{{ $t("lemon.welcome.question") }}</p>
+      <h1>{{ $t("sodai.welcome.greeting", { username }) }}</h1>
+      <p>{{ $t("sodai.welcome.question") }}</p>
       <ChatInput @send="handleWelcomeInput" />
     </div>
     <!--  -->
@@ -16,16 +16,16 @@
     <!-- 案例
     <div class="case-container">
       <div class="category-tabs">
-        <a href="#" class="tab active">{{ $t('lemon.welcome.tabs.featured') }}</a>
-        <a href="#" class="tab">{{ $t('lemon.welcome.tabs.research') }}</a>
-        <a href="#" class="tab">{{ $t('lemon.welcome.tabs.lifestyle') }}</a>
-        <a href="#" class="tab">{{ $t('lemon.welcome.tabs.dataAnalysis') }}</a>
-        <a href="#" class="tab">{{ $t('lemon.welcome.tabs.education') }}</a>
-        <a href="#" class="tab">{{ $t('lemon.welcome.tabs.productivity') }}</a>
-        <a href="#" class="tab">{{ $t('lemon.welcome.tabs.other') }}</a>
+        <a href="#" class="tab active">{{ $t('sodai.welcome.tabs.featured') }}</a>
+        <a href="#" class="tab">{{ $t('sodai.welcome.tabs.research') }}</a>
+        <a href="#" class="tab">{{ $t('sodai.welcome.tabs.lifestyle') }}</a>
+        <a href="#" class="tab">{{ $t('sodai.welcome.tabs.dataAnalysis') }}</a>
+        <a href="#" class="tab">{{ $t('sodai.welcome.tabs.education') }}</a>
+        <a href="#" class="tab">{{ $t('sodai.welcome.tabs.productivity') }}</a>
+        <a href="#" class="tab">{{ $t('sodai.welcome.tabs.other') }}</a>
       </div>
       <div class="case-title">
-        <span>{{ $t('lemon.welcome.communityNote') }}</span>
+        <span>{{ $t('sodai.welcome.communityNote') }}</span>
       </div>
       <Suggestion />
     </div>
@@ -65,7 +65,7 @@ const handleWelcomeInput = async (value) => {
   const { conversation_id } = result;
   if (conversation_id) {
     //处理files 的 conversation_id
-    router.push(`/lemon/${conversation_id}`);
+    router.push(`/sodai/${conversation_id}`);
   }
   // seeAgent.sendMessage(text)
   await seeAgent.sendMessage(text, conversation_id, files, mcp_server_ids);

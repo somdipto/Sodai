@@ -37,12 +37,12 @@ const props = defineProps({
 });
 
 const actionTypeDescriptions = {
-  terminal_run: t('lemon.message.runCommand'),
-  read_code: t('lemon.message.readFile'),
-  write_code: t('lemon.message.editFile'),
-  browser: t('lemon.message.browsing'),
-  web_search: t('lemon.message.searching'),
-  read_file: t('lemon.message.readFile'),
+  terminal_run: t('sodai.message.runCommand'),
+  read_code: t('sodai.message.readFile'),
+  write_code: t('sodai.message.editFile'),
+  browser: t('sodai.message.browsing'),
+  web_search: t('sodai.message.searching'),
+  read_file: t('sodai.message.readFile'),
   mcp_tool: 'MCP'
 };
 const svgHash = {

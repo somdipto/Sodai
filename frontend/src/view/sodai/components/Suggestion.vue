@@ -29,7 +29,7 @@ const handleCardClick = async (card) => {
   console.log('createConversation', result);
   const { conversation_id } = result;
   if (conversation_id) {
-    router.push(`/lemon/${conversation_id}`);
+    router.push(`/sodai/${conversation_id}`);
     await seeAgent.sendMessage(card.title,conversation_id,[]);
   }
 }
@@ -39,25 +39,25 @@ const suggestionCards = ref([
     id: 1,
     icon: 'icon-japan',
     title: '四月日本之旅',
-    description: 'Lemon集成全面的旅游信息,制定个性化的行程表,并制作专为您定制的日本旅行计划'
+    description: 'Sodai集成全面的旅游信息,制定个性化的行程表,并制作专为您定制的日本旅行计划'
   },
   {
     id: 2,
     icon: 'icon-analysis',
     title: '深度分析特斯拉股票',
-    description: 'Lemon提供深入的股票分析,通过现代化的引力分析仪表展现特斯拉的技术特点'
+    description: 'Sodai提供深入的股票分析,通过现代化的引力分析仪表展现特斯拉的技术特点'
   },
   {
     id: 3,
     icon: 'icon-education',
     title: '动量定理互动课程',
-    description: 'Lemon为中学教育者制作了引人入胜的视频演示,通过演讲增进教育内容'
+    description: 'Sodai为中学教育者制作了引人入胜的视频演示,通过演讲增进教育内容'
   },
   {
     id: 4,
     icon: 'icon-report',
     title: '保险资管报告分析',
-    description: 'Lemon生成清晰、结构化的对比表格,突出关键数据'
+    description: 'Sodai生成清晰、结构化的对比表格,突出关键数据'
   }
 ])
 </script>

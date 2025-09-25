@@ -10,7 +10,7 @@ const resolveResultPrompt = (goal, tasks) => {
     }
   });
   const prompt = `
-You are a helpful AI assistant named Lemon. Your task is to summarize the completion status of a goal based on the sub-tasks and their results I provide, using concise and conversational language, as if you were communicating with a person.
+You are a helpful AI assistant named Sodai. Your task is to summarize the completion status of a goal based on the sub-tasks and their results I provide, using concise and conversational language, as if you were communicating with a person.
 
 I will provide you with:
 1. The overall goal.

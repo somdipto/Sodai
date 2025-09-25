@@ -4,7 +4,7 @@
     <div class="preview-header">
       <div class="title-t">
         <div class="title">
-          {{ $t("lemon.preview.title") }}
+          {{ $t("sodai.preview.title") }}
         </div>
         <div class="icon-ct">
           <div class="sandbox-content">
@@ -14,7 +14,7 @@
               class="vscode-btn item"
             >
               <vscodeSvg class="icon" />
-              {{ $t("lemon.preview.openVsCode") }}
+              {{ $t("sodai.preview.openVsCode") }}
             </a-button>
           </div>
           <div class="close-btn" @click="handleClose">
@@ -28,11 +28,11 @@
         </div>
         <div class="status">
           <div class="use-title">
-            {{ $t("lemon.preview.using") }}
+            {{ $t("sodai.preview.using") }}
             <span class="typeDescription">{{ typeDescription }}</span>
           </div>
           <div class="commanding">
-            {{ $t("lemon.preview.performing") }}
+            {{ $t("sodai.preview.performing") }}
             <span class="typeDetail">{{ typeDetail }}</span>
           </div>
         </div>
@@ -76,7 +76,7 @@
           <div class="btns">
             <a-popover>
               <template #content>
-                <p>{{ $t("lemon.preview.previousStep") }}</p>
+                <p>{{ $t("sodai.preview.previousStep") }}</p>
               </template>
               <StepBackwardOutlined
                 class="item"
@@ -86,7 +86,7 @@
             </a-popover>
             <a-popover>
               <template #content>
-                <p>{{ $t("lemon.preview.nextStep") }}</p>
+                <p>{{ $t("sodai.preview.nextStep") }}</p>
               </template>
               <StepForwardOutlined
                 class="item"
@@ -111,7 +111,7 @@
                 class="realtime-dot"
                 :class="isRealTime ? 'realon' : 'realoff'"
               ></div>
-              <span>{{ $t("lemon.preview.realtime") }}</span>
+              <span>{{ $t("sodai.preview.realtime") }}</span>
             </div>
           </div>
         </div>
@@ -244,8 +244,8 @@ async function handleMessageUpdate(newValue) {
 
   switch (actionType) {
     case "browser":
-      typeDescription.value = t("lemon.preview.browser");
-      typeTitle.value = t("lemon.preview.browsing");
+      typeDescription.value = t("sodai.preview.browser");
+      typeTitle.value = t("sodai.preview.browsing");
       browserImageData.value =
         newValue.meta.json.browser_history_screenshot || "";
       //TODO sequence browser screenshot display
@@ -256,8 +256,8 @@ async function handleMessageUpdate(newValue) {
         )[0] || "";
       break;
     case "write_code":
-      typeDescription.value = t("lemon.preview.editor");
-      typeTitle.value = t("lemon.preview.editingFile");
+      typeDescription.value = t("sodai.preview.editor");
+      typeTitle.value = t("sodai.preview.editingFile");
       fileName.value = newValue.meta?.filepath
         ? newValue.meta.filepath.split("/").pop() || ""
         : "";
@@ -287,8 +287,8 @@ async function handleMessageUpdate(newValue) {
       }
       break;
     case "read_file":
-      typeDescription.value = t("lemon.preview.editor");
-      typeTitle.value = t("lemon.preview.readingFile");
+      typeDescription.value = t("sodai.preview.editor");
+      typeTitle.value = t("sodai.preview.readingFile");
       fileName.value = newValue.meta?.filepath
         ? newValue.meta.filepath.split("/").pop() || ""
         : "";
@@ -318,22 +318,22 @@ async function handleMessageUpdate(newValue) {
       }
       break;
     case "terminal_run":
-      typeDescription.value = t("lemon.preview.terminal");
-      typeTitle.value = t("lemon.preview.executingCommand");
+      typeDescription.value = t("sodai.preview.terminal");
+      typeTitle.value = t("sodai.preview.executingCommand");
       fileName.value = "shell1";
       fileContent.value = newValue.content || "";
       break;
     case "web_search":
-      typeDescription.value = t("lemon.preview.search");
-      typeTitle.value = t("lemon.preview.searching");
-      fileName.value = t("lemon.preview.search");
+      typeDescription.value = t("sodai.preview.search");
+      typeTitle.value = t("sodai.preview.searching");
+      fileName.value = t("sodai.preview.search");
       browserContent.value = newValue.meta.json || [];
       fileContent.value = "";
       break;
     // case "browser":
-    //   typeDescription.value = t('lemon.preview.search');
-    //   typeTitle.value = t('lemon.preview.searching');
-    //   fileName.value = t('lemon.preview.search');
+    //   typeDescription.value = t('sodai.preview.search');
+    //   typeTitle.value = t('sodai.preview.searching');
+    //   fileName.value = t('sodai.preview.search');
     //   browserImage.value = newValue.meta.json.browser_history_screenshot || '';
     //   console.log('browserImage', newValue.meta.json.browser_history_screenshot );
     //   break;
@@ -383,7 +383,7 @@ const handleClose = () => {
 const props = defineProps({
   title: {
     type: String,
-    default: "lemon",
+    default: "sodai",
   },
 });
 

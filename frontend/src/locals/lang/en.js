@@ -163,7 +163,7 @@ sodai: "Sodai",
     }
   },
   //主界面
-  lemon: {
+  sodai: {
     // 首页
     welcome: {
       greeting: "Hello",
@@ -285,27 +285,7 @@ sodai: "Sodai",
       copyFailed: "Copy failed, please try again or manually copy.",
       exportPDFPending: "Export PDF successfully",
       saveToGoogleDrivePending: "Save to Google Drive feature is under development."
-    },
-    preview: {
-      title: "Lemon's computer",
-      openVsCode: "VS Code",
-      using: "Lemon is using",
-      performing: "Performing",
-      previousStep: "Previous step",
-      nextStep: "Next step",
-      realtime: "Realtime",
-      waitingForDevelopment: "Waiting for development...",
-      browser: "Browser",
-      browsing: "Browsing",
-      editor: "Editor",
-      editingFile: "Editing file",
-      terminal: "Terminal",
-      executingCommand: "Executing command",
-      readingFile: "Reading file",
-      search: "Search",
-      searching: "Searching"
     }
-
   },
   //设置界面
   setting: {
@@ -438,7 +418,7 @@ sodai: "Sodai",
         OpenRouter: "OpenRouter",
         LMStudio: "LM Studio",
         Cloudsway: "Cloudsway",
-        Lemon: "Lemon",
+        Sodai: "Sodai",
 
       },
       showMoreOptions: "Show more options",

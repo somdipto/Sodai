@@ -26,7 +26,7 @@ const getDirpath = (dir) => {
   }
 
   if (SODAI_AI_PATH) {
-    filepath = resolve(LEMON_AI_PATH, dir);
+    filepath = resolve(SODAI_PATH, dir);
   }
   return filepath;
 }

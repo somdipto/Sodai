@@ -116,7 +116,7 @@ function handleAutoReply(message,messages){
     //update_status
     messages.push(
         {
-            content: i18n.global.t('lemon.message.botInitialPlan'),
+            content: i18n.global.t('sodai.message.botInitialPlan'),
             role: 'assistant',
             is_temp: true,
             meta: {

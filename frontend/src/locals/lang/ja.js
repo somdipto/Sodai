@@ -53,7 +53,7 @@ export default {
     verifyingGoogleLogin: "Googleログインを認証中"
   },
   // メイン画面
-  lemon: {
+  sodai: {
     // ホーム
     welcome: {
       greeting: "こんにちは",
@@ -173,9 +173,9 @@ export default {
       saveToGoogleDrivePending: "Google Driveへの保存機能は準備中です。"
     },
     preview: {
-      title: "Lemonのコンピュータ",
+      title: "Sodaiのコンピュータ",
       openVsCode: "VS Code",
-      using: "Lemonが使用中",
+      using: "Sodaiが使用中",
       performing: "実行中",
       previousStep: "前のステップ",
       nextStep: "次のステップ",

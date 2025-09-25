@@ -544,7 +544,7 @@ async function checkAndRunDockerSetup(mainWindow) {
 
 
 // --- Export the functions needed by main.js ---
-export {
+module.exports = {
     initDockerSetupService,
     checkAndRunDockerSetup,
     DOCKER_SETUP_DONE_KEY

@@ -4,7 +4,7 @@
       <div v-for="message in messages" :key="message.id" class="message-item" :class="message.role">
         <div class="message-options" v-if="!isPlanOrUpdateStatus(message)">
           <div v-if="message.role === 'assistant'" class="message-title">
-            <img src="@/assets/image/lemon.jpg" alt="" />
+            <img src="@/assets/image/sodai.jpg" alt="" />
             Sodai
           </div>
           <div v-else></div>
@@ -96,10 +96,10 @@ const props = defineProps({
 const copyMessage = (message) => {
   console.log("=== message ====", message);
   navigator.clipboard.writeText(message.content).then(() => {
-    messageUtil.success(t('lemon.message.copySuccess'));
+    messageUtil.success(t('sodai.message.copySuccess'));
   }).catch(err => {
     console.error('Failed to copy:', err);
-    messageUtil.error(t('lemon.message.copyError'));
+    messageUtil.error(t('sodai.message.copyError'));
   });
 };
 </script>

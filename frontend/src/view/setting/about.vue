@@ -16,7 +16,7 @@
           <span>{{ $t('setting.about.officialWebsite') }}</span>
         </div>
         <div>
-          <a-button @click="handleOpenLemonPage">{{ $t('setting.about.view') }}</a-button>
+          <a-button @click="handleOpenSodaiPage">{{ $t('setting.about.view') }}</a-button>
         </div>
       </div>
       <div class="son">
@@ -95,7 +95,7 @@ function handleOpenReleasePage() {
   window.open(versionInfo.value.updateUrl, '_blank');
 }
 
-function handleOpenLemonPage() {
+function handleOpenSodaiPage() {
   window.open('https://www.sodai.cc/', '_blank');
 }
 

@@ -52,7 +52,7 @@
 
 <script setup>
 import { ref, reactive, computed, onMounted } from 'vue';
-import logo from '@/assets/image/lemon.jpg';
+import logo from '@/assets/image/sodai.jpg';
 import google from '@/assets/svg/google.svg';
 
 // import apple from '@/assets/svg/apple.svg';

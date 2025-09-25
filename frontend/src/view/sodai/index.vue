@@ -1,7 +1,7 @@
 <template>
-  <div class="lemon-container">
+  <div class="sodai-container">
     <Sidebar v-model:isCollapsed="isCollapsed" />
-    <div class="lemon-content">
+    <div class="sodai-content">
       <!-- 主页面 -->
       <ChatPanel class="chat-panel" />
       <!-- 实时预览文件-->
@@ -49,7 +49,7 @@ onUnmounted(() => {
   cursor: pointer; 
 }
 
-.lemon-container {
+.sodai-container {
   display: flex;
   justify-content: center;
   width: 100%;
@@ -57,7 +57,7 @@ onUnmounted(() => {
   background: #f8f8f7;
 }
 
-.lemon-content {
+.sodai-content {
   width: 100%;
   height: 100%;
   display: flex;

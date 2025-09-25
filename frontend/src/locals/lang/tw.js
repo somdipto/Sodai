@@ -53,7 +53,7 @@ export default {
     verifyingGoogleLogin: "正在驗證 Google 登入"
   },
   // 主介面
-  lemon: {
+  sodai: {
     // 首頁
     welcome: {
       greeting: "你好",
@@ -173,9 +173,9 @@ export default {
       saveToGoogleDrivePending: "儲存至 Google Drive 功能待實現。"
     },
     preview: {
-      title: "Lemon 的電腦",
+      title: "Sodai 的電腦",
       openVsCode: "VS Code",
-      using: "Lemon 正在使用",
+      using: "Sodai 正在使用",
       performing: "正在執行",
       previousStep: "上一步",
       nextStep: "下一步",

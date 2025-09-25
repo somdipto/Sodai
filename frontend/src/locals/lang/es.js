@@ -53,7 +53,7 @@ export default {
     verifyingGoogleLogin: "Verificando inicio de sesión de Google"
   },
   //主界面
-  lemon: {
+  sodai: {
     // 首页
     welcome: {
       greeting: "Hola",
@@ -173,9 +173,9 @@ export default {
       saveToGoogleDrivePending: "La función de guardar en Google Drive está pendiente de implementación."
     },
     preview: {
-      title: "La computadora de Lemon",
+      title: "La computadora de Sodai",
       openVsCode: "VS Code",
-      using: "Lemon está usando",
+      using: "Sodai está usando",
       performing: "Realizando",
       previousStep: "Paso anterior",
       nextStep: "Siguiente paso",

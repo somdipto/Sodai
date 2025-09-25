@@ -72,7 +72,7 @@ class DockerRuntime {
     // 查看容器是否存在，如果不存在，初始化容器，如果存在但是没启动，start容器
     let container;
     try {
-      container = docker.getContainer('lemon-runtime-sandbox')
+      container = docker.getContainer('sodai-runtime-sandbox')
       const container_info = await container.inspect();
       if (container_info.State.Status === 'exited') {
         console.log('DockerRuntime.connect_container.container exited, start container');
@@ -137,7 +137,7 @@ class DockerRuntime {
 
     const container = await docker.createContainer({
       Image: imageName,
-      name: 'lemon-runtime-sandbox',                // 容器名称
+      name: 'sodai-runtime-sandbox',                // 容器名称
       Cmd: ['node', 'chataa/action_execution_server.js', '--port', `${host_port}`, '--vscode_port', `${vscode_port}`],  // 启动命令
       WorkingDir: '/chataa/code',                // 容器内工作目录
       ExposedPorts: exposedPortsMap,

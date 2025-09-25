@@ -53,7 +53,7 @@ export default {
     verifyingGoogleLogin: "Verificando login com Google"
   },
   // Interface Principal
-  lemon: {
+  sodai: {
     // Página Inicial
     welcome: {
       greeting: "Olá",
@@ -173,9 +173,9 @@ export default {
       saveToGoogleDrivePending: "Funcionalidade de salvar no Google Drive em desenvolvimento."
     },
     preview: {
-      title: "Computador do Lemon",
+      title: "Computador do Sodai",
       openVsCode: "VS Code",
-      using: "Lemon está usando",
+      using: "Sodai está usando",
       performing: "Executando",
       previousStep: "Etapa anterior",
       nextStep: "Próxima etapa",

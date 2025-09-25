@@ -8,17 +8,17 @@ export const formatTime = (timestamp,t) => {
     const diffDays = Math.floor(diff / (1000 * 60 * 60 * 24));
 
     if (diffSeconds < 60) {
-      return `${diffSeconds} ${t('lemon.message.secondsAgo')}`;
+      return `${diffSeconds} ${t('sodai.message.secondsAgo')}`;
     }else if (diffMinutes < 60) {
-      return `${diffMinutes} ${t('lemon.message.minutesAgo')}`;
+      return `${diffMinutes} ${t('sodai.message.minutesAgo')}`;
     } else if (diffHours < 24) {
-      return `${diffHours} ${t('lemon.message.hoursAgo')}`;
+      return `${diffHours} ${t('sodai.message.hoursAgo')}`;
     } else if (diffDays < 30) {
-      return `${diffDays} ${t('lemon.message.daysAgo')}`;
+      return `${diffDays} ${t('sodai.message.daysAgo')}`;
     } else if (diffDays < 365) {
-      return `${Math.floor(diffDays / 30)} ${t('lemon.message.monthsAgo')}`;
+      return `${Math.floor(diffDays / 30)} ${t('sodai.message.monthsAgo')}`;
     } else {
-      return `${Math.floor(diffDays / 365)} ${t('lemon.message.yearsAgo')}`;
+      return `${Math.floor(diffDays / 365)} ${t('sodai.message.yearsAgo')}`;
     }
   };
 

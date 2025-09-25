@@ -5,7 +5,7 @@ const path = require('path');
 const http = require('http');
 const { URL } = require('url'); // Node.js 的 URL 类
 const { exec, spawn } = require('child_process');
-import { initDockerSetupService, checkAndRunDockerSetup, DOCKER_SETUP_DONE_KEY } from './dockerSetupService.js';
+const { initDockerSetupService, checkAndRunDockerSetup, DOCKER_SETUP_DONE_KEY } = require('./dockerSetupService.js');
 
 let mainWindow;
 let backendProcess; // 你的后端进程变量

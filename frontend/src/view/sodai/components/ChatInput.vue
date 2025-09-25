@@ -35,7 +35,7 @@
                 class="model-select"
                 @change="changeModel"
                 v-model:value="selectedModel"
-                :placeholder="$t('lemon.input.chooseModel')"
+                :placeholder="$t('sodai.input.chooseModel')"
                 style="width: 200px"
                 :options="groupedOptions"
                 optionLabelProp="label"
@@ -116,7 +116,7 @@ const { user, membership, points } = storeToRefs(userStore);
 
 const chatStore = useChatStore();
 const messageText = ref("");
-const placeholder = ref(t("lemon.welcome.placeholder"));
+const placeholder = ref(t("sodai.welcome.placeholder"));
 const currentMode = ref("text");
 const fileList = ref([]);
 const selectedModel = ref(null);
@@ -296,13 +296,13 @@ const handleSend = async () => {
       handleNotification("/auth", t("auth.login"), t("auth.subscribeModel"));
       return;
     }
-    // provider_name: "Lemon"
-    if (searchEngine.value.provider_name === "Lemon" && !isLogin.value) {
+    // provider_name: "Sodai"
+    if (searchEngine.value.provider_name === "Sodai" && !isLogin.value) {
       handleNotification("/setting/search-service", t("auth.login"), t("auth.subscribeService"));
       return;
     }
     // 判断积分
-    if (points.value.total <= 0 && isLogin.value && (model.is_subscribe || searchEngine.value.provider_name === "Lemon")) {
+    if (points.value.total <= 0 && isLogin.value && (model.is_subscribe || searchEngine.value.provider_name === "Sodai")) {
       handleNotification("/setting/usage", t("auth.insufficientPoints"), t("auth.insufficientPointsPleaseGoToUpgradeOrPurchase"));
       return;
     }

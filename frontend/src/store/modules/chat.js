@@ -181,7 +181,7 @@ export const useChatStore = defineStore('chat', {
       this.messages.push(message);
 
       const bot_message = {
-        content: i18n.global.t('lemon.message.botInitialResponse'),
+        content: i18n.global.t('sodai.message.botInitialResponse'),
         role: 'assistant',
         is_temp: true,
       }

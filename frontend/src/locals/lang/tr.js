@@ -53,7 +53,7 @@ export default {
     verifyingGoogleLogin: "Google ile giriş doğrulanıyor"
   },
   // Ana Arayüz
-  lemon: {
+  sodai: {
     // Ana Sayfa
     welcome: {
       greeting: "Merhaba",
@@ -173,9 +173,9 @@ export default {
       saveToGoogleDrivePending: "Google Drive'a kaydetme özelliği geliştirme aşamasında."
     },
     preview: {
-      title: "Lemon'un Bilgisayarı",
+      title: "Sodai'un Bilgisayarı",
       openVsCode: "VS Code",
-      using: "Lemon kullanıyor",
+      using: "Sodai kullanıyor",
       performing: "Yürütülüyor",
       previousStep: "Önceki adım",
       nextStep: "Sonraki adım",

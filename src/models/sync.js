@@ -165,21 +165,21 @@ const dataUpdate = async () => {
     await Model.bulkCreate(modelsData);
   }
   // v0.1.2 => v0.1.3
-  const platform_lemon = await Platform.findOne({ where: { name: 'Lemon' } })
-  if (!platform_lemon) {
-    const lemonPlatform = defaultData.find(item => item.name === 'Lemon')
+  const platform_sodai = await Platform.findOne({ where: { name: 'Sodai' } })
+  if (!platform_sodai) {
+    const sodaiPlatform = defaultData.find(item => item.name === 'Sodai')
     const platformData = {
-      name: lemonPlatform.name,
-      logo_url: lemonPlatform.logo_url,
+      name: sodaiPlatform.name,
+      logo_url: sodaiPlatform.logo_url,
       source_type: 'system',
-      api_key: lemonPlatform.api_key,
-      api_url: lemonPlatform.api_url,
-      api_version: lemonPlatform.api_version,
-      key_obtain_url: lemonPlatform.key_obtain_url,
+      api_key: sodaiPlatform.api_key,
+      api_url: sodaiPlatform.api_url,
+      api_version: sodaiPlatform.api_version,
+      key_obtain_url: sodaiPlatform.key_obtain_url,
       is_subscribe: true
     };
     const platform = await Platform.create(platformData);
-    const modelsData = lemonPlatform.models.map(model => ({
+    const modelsData = sodaiPlatform.models.map(model => ({
       // @ts-ignore
       platform_id: platform.id,
       logo_url: model.logo_url,
@@ -190,13 +190,13 @@ const dataUpdate = async () => {
     }));
     await Model.bulkCreate(modelsData);
   }
-  // const lemonSearchProviderData = defaultSearchProviderData.find(item => item.name === 'Lemon');
-  // const lemonSearchProvider = await SearchProviderTable.findOne({ where: { name: lemonSearchProviderData.name } });
-  // if (!lemonSearchProvider) {
+  // const sodaiSearchProviderData = defaultSearchProviderData.find(item => item.name === 'Sodai');
+  // const sodaiSearchProvider = await SearchProviderTable.findOne({ where: { name: sodaiSearchProviderData.name } });
+  // if (!sodaiSearchProvider) {
   //   const searchProviderData = {
-  //     name: lemonSearchProviderData.name,
-  //     logo_url: lemonSearchProviderData.logo_url,
-  //     base_config_schema: lemonSearchProviderData.base_config_schema,
+  //     name: sodaiSearchProviderData.name,
+  //     logo_url: sodaiSearchProviderData.logo_url,
+  //     base_config_schema: sodaiSearchProviderData.base_config_schema,
   //   };
   //   await SearchProviderTable.create(searchProviderData);
   // }

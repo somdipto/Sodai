@@ -30,9 +30,9 @@
 <script setup>
 import { computed } from 'vue'
 import Markdown from '@/components/markdown/index.vue'
-import LoadingDots from '@/view/lemon/components/LoadingDots.vue'
+import LoadingDots from '@/view/sodai/components/LoadingDots.vue'
 import { LoadingOutlined } from '@ant-design/icons-vue'
-import Planing from '@/view/lemon/message/Planing.vue'
+import Planing from '@/view/sodai/message/Planing.vue'
 import MessageFileList from '@/components/MessageFileList/index.vue'
 import Stop from '@/assets/message/stop.svg'
 import Failure from '@/assets/message/failure.svg'

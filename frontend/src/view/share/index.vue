@@ -1,16 +1,16 @@
 <template>
-    <div class="lemon-container">
-        <div class="lemon-content">
+    <div class="sodai-container">
+        <div class="sodai-content">
             <!-- 主页面 -->
-            <div class="lemon-main">
+            <div class="sodai-main">
                 <ChatHeader :title="currentChat.title" />
                 <ChatMessages :messages="messages" />
                 <div class="scroll-to-bottom" @click="scrollToBottom" v-if="isShowScrollToBottom">
                     <Down />
                 </div>
-                <div class="lemon-footer">
+                <div class="sodai-footer">
                     <div style="display: flex;align-items: center;">
-                        <div><img style="width: 20px;height: 20px; margin-right: 5px;" src="@/assets/image/lemon.jpg" alt="" /></div>
+                        <div><img style="width: 20px;height: 20px; margin-right: 5px;" src="@/assets/image/sodai.jpg" alt="" /></div>
                         <div v-if="playStatus!='running'">Sodai{{ $t('task_finished') }}</div>
 <div v-else>Sodai{{ $t('task_playing') }}...</div>
                     </div>
@@ -33,8 +33,8 @@ import { ref, onMounted, onUnmounted, watch, computed } from 'vue'
 
 import Preview from '@/components/preview/index.vue'
 import LocalPreview from '@/components/preview/fullPreview.vue'
-import ChatHeader from '@/view/lemon/components/ChatHeader.vue'
-import ChatMessages from '@/view/lemon/components/ChatMessages.vue'
+import ChatHeader from '@/view/sodai/components/ChatHeader.vue'
+import ChatMessages from '@/view/sodai/components/ChatMessages.vue'
 import emitter from '@/utils/emitter';
 
 import { useRoute } from 'vue-router';
@@ -106,7 +106,7 @@ const scrollToBottom = () => {
     cursor: pointer;
 }
 
-.lemon-container {
+.sodai-container {
     display: flex;
     justify-content: center;
     width: 100%;
@@ -114,13 +114,13 @@ const scrollToBottom = () => {
     background: #f8f8f7;
 }
 
-.lemon-content {
+.sodai-content {
     width: 100%;
     height: 100%;
     display: flex;
     overflow-y: auto;
 
-    .lemon-main {
+    .sodai-main {
         min-width: 50%;
         padding-left: 1.25rem;
         padding-right: 1.25rem;
@@ -150,7 +150,7 @@ const scrollToBottom = () => {
 }
 
 @media (min-width: 640px) {
-  .lemon-main {
+  .sodai-main {
     max-width: 768px!important;
     min-width: 390px!important;
     margin-left: auto;
@@ -158,7 +158,7 @@ const scrollToBottom = () => {
   }
 }
 
-.lemon-footer{
+.sodai-footer{
     position: sticky;
     bottom: 12px;
     padding-right: .75rem;
