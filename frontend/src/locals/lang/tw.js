@@ -1,8 +1,8 @@
 export default {
   // 登入介面
   auth: {
-    loginToLemonAI: "登入 LemonAI",
-    registerLemonAIAccount: "註冊 LemonAI 帳戶",
+    loginToSodai: "登入 Sodai",
+    registerSodaiAccount: "註冊 Sodai 帳戶",
     verifyEmail: "驗證電子郵件",
     resetPassword: "重設密碼",
     loginWithGoogle: "使用 Google 登入",

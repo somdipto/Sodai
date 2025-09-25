@@ -30,13 +30,13 @@ jobs:
     if: ${{ needs.check-changes.outputs.runtime_sandbox_changed == 'true' }}
     runs-on: self-hosted
     env:
-      IMAGE_NAME: hexdolemonai/lemon-runtime-sandbox
+      IMAGE_NAME: hexdosodai/sodai-runtime-sandbox
       DOCKERFILE: containers/runtime/Dockerfile
       VERSION_FILE: containers/runtime/VERSION # 新增：指定版本号文件路径
       PLATFORMS: linux/amd64,linux/arm64
       # 更新阿里云镜像仓库信息
       ALIYUN_REGISTRY: registry.cn-beijing.aliyuncs.com # 替换为你的阿里云镜像仓库地址
-      ALIYUN_NAMESPACE: hexdolemonai # 替换为你的阿里云命名空间
+      ALIYUN_NAMESPACE: hexdosodai # 替换为你的阿里云命名空间
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -85,8 +85,8 @@ jobs:
           DOCKER_HUB_TAG=${{ env.IMAGE_NAME }}:$RUNTIME_TAG
           DOCKER_HUB_LATEST_TAG=${{ env.IMAGE_NAME }}:latest
           # 阿里云标签
-          ALIYUN_TAG=${{ env.ALIYUN_REGISTRY }}/${{ env.ALIYUN_NAMESPACE }}/lemon-runtime-sandbox:$RUNTIME_TAG
-          ALIYUN_LATEST_TAG=${{ env.ALIYUN_REGISTRY }}/${{ env.ALIYUN_NAMESPACE }}/lemon-runtime-sandbox:latest
+          ALIYUN_TAG=${{ env.ALIYUN_REGISTRY }}/${{ env.ALIYUN_NAMESPACE }}/sodai-runtime-sandbox:$RUNTIME_TAG
+          ALIYUN_LATEST_TAG=${{ env.ALIYUN_REGISTRY }}/${{ env.ALIYUN_NAMESPACE }}/sodai-runtime-sandbox:latest
 
           echo "Building and pushing $DOCKER_HUB_TAG, $DOCKER_HUB_LATEST_TAG, $ALIYUN_TAG, $ALIYUN_LATEST_TAG for platforms [${{ env.PLATFORMS }}]"
           docker buildx build \
@@ -105,13 +105,13 @@ jobs:
     if: ${{ needs.check-changes.outputs.app_changed == 'true' }}
     runs-on: ubuntu-latest
     env:
-      APP_IMAGE_NAME: hexdolemonai/lemon
+      APP_IMAGE_NAME: hexdosodai/sodai
       APP_DOCKERFILE: containers/app/Dockerfile
       APP_VERSION_FILE: containers/app/VERSION # 新增：指定版本号文件路径
       PLATFORMS: linux/amd64,linux/arm64
       # 更新阿里云镜像仓库信息
       ALIYUN_REGISTRY: registry.cn-beijing.aliyuncs.com # 替换为你的阿里云镜像仓库地址
-      ALIYUN_NAMESPACE: hexdolemonai # 替换为你的阿里云命名空间
+      ALIYUN_NAMESPACE: hexdosodai # 替换为你的阿里云命名空间
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -158,8 +158,8 @@ jobs:
           DOCKER_HUB_TAG=${{ env.APP_IMAGE_NAME }}:$APP_TAG
           DOCKER_HUB_LATEST_TAG=${{ env.APP_IMAGE_NAME }}:latest
           # 阿里云标签
-          ALIYUN_TAG=${{ env.ALIYUN_REGISTRY }}/${{ env.ALIYUN_NAMESPACE }}/lemon:$APP_TAG
-          ALIYUN_LATEST_TAG=${{ env.ALIYUN_REGISTRY }}/${{ env.ALIYUN_NAMESPACE }}/lemon:latest
+          ALIYUN_TAG=${{ env.ALIYUN_REGISTRY }}/${{ env.ALIYUN_NAMESPACE }}/sodai:$APP_TAG
+          ALIYUN_LATEST_TAG=${{ env.ALIYUN_REGISTRY }}/${{ env.ALIYUN_NAMESPACE }}/sodai:latest
 
           echo "Building and pushing $DOCKER_HUB_TAG, $DOCKER_HUB_LATEST_TAG, $ALIYUN_TAG, $ALIYUN_LATEST_TAG for platforms [${{ env.PLATFORMS }}]"
           docker buildx build \

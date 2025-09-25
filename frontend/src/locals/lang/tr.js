@@ -1,8 +1,8 @@
 export default {
   // Giriş Arayüzü
   auth: {
-    loginToLemonAI: "LemonAI'a Giriş Yap",
-    registerLemonAIAccount: "LemonAI Hesabı Kaydol",
+    loginToSodai: "Sodai'ye Giriş Yap",
+    registerSodaiAccount: "Sodai Hesabı Kaydol",
     verifyEmail: "E-posta Doğrulama",
     resetPassword: "Şifre Sıfırlama",
     loginWithGoogle: "Google ile Giriş Yap",

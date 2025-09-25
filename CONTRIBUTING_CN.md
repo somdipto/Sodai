@@ -2,84 +2,82 @@
 icon: file-lines
 ---
 
-# CONTRIBUTING\_CN
+# CONTRIBUTING
 
-非常感谢你考虑为 Lemon 做出贡献！作为一家资源有限的创业公司，社区的每一份贡献对我们来说都弥足珍贵。
+Thank you for considering contributing to Sodai! As a startup with limited resources, every contribution from the community is invaluable to us.
 
-我们需要保持敏捷和快速迭代，同时也希望确保贡献者能获得尽可能流畅的参与体验。这份贡献指南旨在帮助你熟悉代码库和我们的工作方式，让你可以尽快进入有趣的开发环节。
+We need to remain agile and iterate quickly, while also ensuring contributors like you have the smoothest possible experience participating. This contribution guide aims to help you familiarize yourself with the codebase and our workflow, so you can quickly move to the fun development part.
 
-本指南和 Lemon 一样在不断完善中。如果有任何滞后于项目实际情况的地方，恳请谅解，我们也欢迎任何改进建议。
+Like Sodai itself, this guide is continuously improving. We appreciate your understanding if anything lags behind the actual project, and welcome any feedback for improvements.
 
-关于许可证，请花一分钟阅读我们简短的许可和贡献者协议。社区同时也遵循[行为准则](https://github.com/hexdocom/lemon/blob/main/CODE_OF_CONDUCT.md)。
+Regarding licensing, please take a minute to read our brief License and Contributor Agreement. The community also adheres to the [Code of Conduct](https://github.com/hexdocom/sodai/blob/main/CODE_OF_CONDUCT.md).
 
-加入我们，一起贡献，共同打造精彩项目！💡✨
+Join us in contributing and building an amazing project together! 💡✨
 
-请记得在 PR 描述中关联现有 issue 或创建新的 issue。
+Please remember to link an existing issue in your PR description or create a new issue.
 
-### Bug 报告
+### Bug Reports
 
-> \[!IMPORTANT]
-> \
-> 提交 bug 报告时请务必包含以下信息：
+> [!IMPORTANT]
+> Please be sure to include the following information when submitting a bug report:
 
-* 清晰描述性的标题
-* 详细的 bug 描述，包括任何错误信息
-* 复现步骤
-* 预期行为
-* 截图或视频（如果适用）
+* Clear and descriptive title
+* Detailed description of the bug, including any error messages
+* Steps to reproduce the bug
+* Expected behavior
+* Screenshots or videos (if applicable)
 
-优先级划分：
+Priority levels:
 
-| 问题类型                           | 优先级   |
-| ------------------------------ | ----- |
-| 核心功能 bug（云服务、登录失败、应用无法使用、安全漏洞） | 紧急    |
-| 非关键 bug、性能优化                   | 中等优先级 |
-| 小修复（拼写错误、界面混乱但可用）              | 低优先级  |
+| Issue Type | Priority |
+|------------|----------|
+| Core function bugs (cloud services, login failures, app unusable, security vulnerabilities) | Urgent |
+| Non-critical bugs, performance optimizations | Medium priority |
+| Minor fixes (typos, interface messy but functional) | Low priority |
 
-### 功能请求
+### Feature Requests
 
-> \[!NOTE]
-> \
-> 提交功能请求时请务必包含以下信息：
+> [!NOTE]
+> Please be sure to include the following information when submitting a feature request:
 
-* 清晰描述性的标题
-* 详细的功能描述
-* 功能使用场景
-* 其他相关上下文或截图
+* Clear and descriptive title
+* Detailed feature description
+* Feature use case
+* Other relevant context or screenshots
 
-## 提交 PR
+## Submitting your PR
 
-### 项目设置
+### Project Setup
 
-### PR 提交流程
+### Pull Request Process
 
-1. Fork 本仓库
-2. 在提交 PR 之前，请先创建 issue 讨论你想要做的修改
-3. 为你的修改创建一个新的分支
-4. 请为你的修改添加相应的测试
-5. 确保你的代码能通过现有的测试
-6. 请在 PR 描述中关联相关 issue，格式为 `fixes #<issue编号>`
-7. 等待合并！
+1. Fork the repository
+2. Before drafting a PR, please create an issue to discuss the changes you want to make
+3. Create a new branch for your changes
+4. Please add tests for your changes accordingly
+5. Ensure your code passes existing tests
+6. Please link the issue in the PR description, format is `fixes #<issue_number>`
+7. Wait for merge!
 
-#### 前端
+#### Frontend
 
-关于前端服务的设置，请参考 `frontend/README.md` 文件中的[详细指南](https://github.com/hexdocom/lemon/blob/main/frontend/WEB_README.md)。该文档提供了帮助你正确配置前端环境的详细说明。
+For setting up the frontend service, please refer to the [detailed guide](https://github.com/hexdocom/sodai/blob/main/frontend/WEB_README.md) in the `frontend/README.md` file. This document provides detailed instructions to help you properly configure the frontend environment.
 
-#### 后端
+#### Backend
 
-关于后端服务的设置，请参考 `API_README.md` 文件中的[详细说明](https://github.com/hexdocom/lemon/blob/main/API_README.md)。该文档包含了帮助你顺利运行后端的步骤说明。
+For setting up the backend service, please refer to the [detailed instructions](https://github.com/hexdocom/sodai/blob/main/API_README.md) in the `API_README.md` file. This document contains step-by-step guidance to help you get the backend up and running smoothly.
 
-#### 其他注意事项
+#### Other Notes
 
-我们建议在开始设置之前仔细阅读本文档，因为它包含以下重要信息：
+We recommend carefully reading this document before beginning setup, as it contains important information about:
 
-* 前置条件和依赖项
-* 安装步骤
-* 配置细节
-* 常见问题解决方案
+* Prerequisites and dependencies
+* Installation steps
+* Configuration details
+* Common troubleshooting tips
 
-如果在设置过程中遇到任何问题，请随时联系我们。
+Feel free to reach out if you encounter any issues during the setup process.
 
-## 获取帮助
+## Getting Help
 
-如果你在贡献过程中遇到困难或有紧急问题，可以通过相关 GitHub issue 向我们提问，进行快速交流。
+If you ever get stuck or have urgent questions while contributing, you can ask us your queries via the related GitHub issue for quick interaction.

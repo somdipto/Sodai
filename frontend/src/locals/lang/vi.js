@@ -1,7 +1,7 @@
 export default {
   auth: {
-    loginToLemonAI: "Đăng nhập vào LemonAI",
-    registerLemonAIAccount: "Đăng ký tài khoản LemonAI",
+    loginToSodai: "Đăng nhập vào Sodai",
+    registerSodaiAccount: "Đăng ký tài khoản Sodai",
     verifyEmail: "Xác minh email",
     resetPassword: "Đặt lại mật khẩu",
     loginWithGoogle: "Đăng nhập bằng Google",

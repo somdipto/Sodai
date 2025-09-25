@@ -4,13 +4,13 @@ icon: file-lines
 
 # CONTRIBUTING
 
-So you're looking to contribute to Lemon - that's awesome, we can't wait to see what you do. As a startup with limited headcount and funding, we have grand ambitions to design the most intuitive workflow for building and managing LLM applications. Any help from the community counts, truly.
+So you're looking to contribute to Sodai - that's awesome, we can't wait to see what you do. As a startup with limited headcount and funding, we have grand ambitions to design the most intuitive workflow for building and managing LLM applications. Any help from the community counts, truly.
 
 We need to be nimble and ship fast given where we are, but we also want to make sure that contributors like you get as smooth an experience at contributing as possible. We've assembled this contribution guide for that purpose, aiming at getting you familiarized with the codebase & how we work with contributors, so you could quickly jump to the fun part.
 
-This guide, like Lemon itself, is a constant work in progress. We highly appreciate your understanding if at times it lags behind the actual project, and welcome any feedback for us to improve.
+This guide, like Sodai itself, is a constant work in progress. We highly appreciate your understanding if at times it lags behind the actual project, and welcome any feedback for us to improve.
 
-In terms of licensing, please take a minute to read our short License and Contributor Agreement. The community also adheres to the [code of conduct](https://github.com/hexdocom/lemon/blob/main/CODE_OF_CONDUCT.md).
+In terms of licensing, please take a minute to read our short License and Contributor Agreement. The community also adheres to the [code of conduct](https://github.com/hexdocom/sodai/blob/main/CODE_OF_CONDUCT.md).
 
 ### Bug reports
 
@@ -53,11 +53,11 @@ In terms of licensing, please take a minute to read our short License and Contri
 
 #### Frontend
 
-For setting up the frontend service, please refer to our comprehensive [guide](https://github.com/hexdocom/lemon/blob/main/frontend/WEB_README.md) in the `frontend/README.md` file. This document provides detailed instructions to help you set up the frontend environment properly.
+For setting up the frontend service, please refer to our comprehensive [guide](https://github.com/hexdocom/sodai/blob/main/frontend/WEB_README.md) in the `frontend/README.md` file. This document provides detailed instructions to help you set up the frontend environment properly.
 
 #### Backend
 
-For setting up the backend service, kindly refer to our detailed [instructions](https://github.com/hexdocom/lemon/blob/main/API_README.md) in the `api/README.md` file. This document contains step-by-step guidance to help you get the backend up and running smoothly.
+For setting up the backend service, kindly refer to our detailed [instructions](https://github.com/hexdocom/sodai/blob/main/API_README.md) in the `api/README.md` file. This document contains step-by-step guidance to help you get the backend up and running smoothly.
 
 #### Other things to note
 

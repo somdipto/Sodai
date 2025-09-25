@@ -27,7 +27,7 @@
   function openApp() {
     const code = route.query.code;
     if (code) {
-      const deeplink = `lemonai://auth?code=${encodeURIComponent(code)}`;
+      const deeplink = `sodai://auth?code=${encodeURIComponent(code)}`;
       window.location.href = deeplink;
     }
   }

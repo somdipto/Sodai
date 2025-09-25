@@ -1,8 +1,8 @@
 
 services:
-  lemon:
-    image: hexdolemonai/lemon:latest
-    container_name: lemon-app
+  sodai:
+    image: hexdosodai/sodai:latest
+    container_name: sodai-app
     environment:
       - DOCKER_HOST_ADDR=host.docker.internal
       - ACTUAL_HOST_WORKSPACE_PATH=${WORKSPACE_BASE:-$PWD/workspace}

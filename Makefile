@@ -1,13 +1,13 @@
 # Makefile
 
 # Configurable variables for easy modification
-IMAGE_NAME   := hexdolemonai/lemon-runtime-sandbox
+IMAGE_NAME   := hexdosodai/sodai-runtime-sandbox
 TAG          := v0.0.5
 DOCKERFILE   := containers/runtime/Dockerfile
 PLATFORMS    := linux/amd64,linux/arm64
 FRONTEND_DIR := frontend  # Frontend directory variable
 
-APP_IMAGE_NAME   := hexdolemonai/lemon
+APP_IMAGE_NAME   := hexdosodai/sodai
 APP_TAG          := v0.0.16
 APP_DOCKERFILE   := containers/app/Dockerfile
 

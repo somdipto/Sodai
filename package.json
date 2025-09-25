@@ -1,6 +1,6 @@
 {
-  "name": "LemonAI",
-  "productName": "LemonAI",
+  "name": "Sodai",
+  "productName": "Sodai",
   "version": "0.3.0",
   "private": true,
   "main": ".vite/main.js",

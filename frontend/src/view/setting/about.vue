@@ -4,7 +4,7 @@
     <div class="options-item">
       <div class="son">
         <div>
-          <span>{{ $t('setting.about.lemonAI') }}</span>
+          <span>{{ $t('setting.about.sodai') }}</span>
           <span class="version">V{{ versionInfo.localVersion }}</span>
         </div>
         <div>
@@ -96,11 +96,11 @@ function handleOpenReleasePage() {
 }
 
 function handleOpenLemonPage() {
-  window.open('https://www.lemonai.cc/', '_blank');
+  window.open('https://www.sodai.cc/', '_blank');
 }
 
 function handleIssuePage() {
-  window.open('https://github.com/hexdocom/lemonai/issues/new', '_blank');
+  window.open('https://github.com/hexdocom/sodai/issues/new', '_blank');
 }
 
 onMounted(() => {

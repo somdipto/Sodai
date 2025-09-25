@@ -1,6 +1,6 @@
 require('dotenv').config()
 const axios = require('axios')
-const SUB_SERVER_DOMAIN = process.env.SUB_SERVER_DOMAIN || 'https://app.lemonai.ai';
+const SUB_SERVER_DOMAIN = process.env.SUB_SERVER_DOMAIN || 'https://app.sodai.ai';
 async function forwardRequest(ctx, method, path) {
   const url = `${SUB_SERVER_DOMAIN}${path}`;
   const config = {

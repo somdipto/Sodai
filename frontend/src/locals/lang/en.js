@@ -28,8 +28,9 @@ export default {
     },
   },
   auth: {
-    loginToLemonAI: "Login to LemonAI",
-    registerLemonAIAccount: "Register LemonAI Account",
+    loginToSodai: "Login to Sodai",
+registerSodaiAccount: "Register Sodai Account",
+sodai: "Sodai",
     verifyEmail: "Verify Email",
     resetPassword: "Reset Password",
     loginWithGoogle: "Login with Google",
@@ -636,7 +637,7 @@ export default {
     },
     about: {
       title: "About",
-      lemonAI: "LemonAI",
+      sodai: "Sodai",
       checkUpdate: "Check update",
       officialWebsite: "Official website",
       view: "View",

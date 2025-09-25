@@ -34,7 +34,7 @@ if (fs.existsSync(envPath)) {
 if (app && app.getPath) {
   const dataUserPath = app.getPath("userData");
   console.log("ELECTRON.APP.USER.PATH", dataUserPath);
-  process.env.LEMON_AI_PATH = dataUserPath;
+  process.env.SODAI_AI_PATH = dataUserPath;
 }
 
 
@@ -155,11 +155,11 @@ if (!gotTheLock) {
   const isWin = process.platform === 'win32';
 
   // 注册协议（Windows 要指定 exe）
-  if (!app.isDefaultProtocolClient('lemonai')) {
+  if (!app.isDefaultProtocolClient('sodai')) {
     if (isWin) {
-      app.setAsDefaultProtocolClient('lemonai', process.execPath, []);
+      app.setAsDefaultProtocolClient('sodai', process.execPath, []);
     } else {
-      app.setAsDefaultProtocolClient('lemonai');
+      app.setAsDefaultProtocolClient('sodai');
     }
   }
 
@@ -224,7 +224,7 @@ if (!gotLock) {
     // Windows：通过 argv 获取协议参数
     app.on('second-instance', (event, argv) => {
       console.log("argv ======",argv);
-      const urlArg = argv.find(arg => arg.startsWith('lemonai://'));
+      const urlArg = argv.find(arg => arg.startsWith('sodai://'));
       if (urlArg) {
         console.log("urlArg ==== ",urlArg);
         deeplinkUrl = urlArg;
@@ -238,7 +238,7 @@ if (!gotLock) {
     // 处理 macOS 的协议打开事件
     app.on('open-url', (event, url) => {
       event.preventDefault();
-      console.log('🍋 Received lemonai:// URL:', url);
+      console.log('🥝 Received sodai:// URL:', url);
       handleDeepLink(url);
     })
   }

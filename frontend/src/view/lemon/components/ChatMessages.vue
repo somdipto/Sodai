@@ -5,7 +5,7 @@
         <div class="message-options" v-if="!isPlanOrUpdateStatus(message)">
           <div v-if="message.role === 'assistant'" class="message-title">
             <img src="@/assets/image/lemon.jpg" alt="" />
-            LemonAI
+            Sodai
           </div>
           <div v-else></div>
           <div style="display: flex; align-items: center; justify-content: flex-end">

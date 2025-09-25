@@ -1,8 +1,8 @@
 export default {
   // ログイン画面
   auth: {
-    loginToLemonAI: "LemonAIにログイン",
-    registerLemonAIAccount: "LemonAIアカウントを登録",
+    loginToSodai: "Sodaiにログイン",
+    registerSodaiAccount: "Sodaiアカウントを登録",
     verifyEmail: "メール認証",
     resetPassword: "パスワードのリセット",
     loginWithGoogle: "Googleでログイン",

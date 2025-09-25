@@ -3,7 +3,7 @@
     <div class="welcome-header">
       <!-- <div class="icon"> 
         <img src="@/assets/image/lemon.jpg" alt="" />
-        LemonAI
+        Sodai
       </div> -->
     </div>
     <div class="welcome-content">

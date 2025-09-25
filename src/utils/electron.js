@@ -1,8 +1,8 @@
 // const { app } = require('electron');
 const resolve = require('path').resolve;
 const resourcesPath = process.resourcesPath;
-console.log('LEMON_AI_PATH', process.env.LEMON_AI_PATH);
-const LEMON_AI_PATH = process.env.LEMON_AI_PATH;
+console.log('SODAI_AI_PATH', process.env.SODAI_AI_PATH);
+const SODAI_AI_PATH = process.env.SODAI_AI_PATH;
 
 const getFilepath = (dir = 'database', filename) => {
 
@@ -11,9 +11,8 @@ const getFilepath = (dir = 'database', filename) => {
     filepath = resolve(resourcesPath, dir, filename);
   }
 
-  if (LEMON_AI_PATH) {
-    filepath = resolve(LEMON_AI_PATH, dir, filename);
-  }
+  if (SODAI_AI_PATH) {
+filepath = resolve(SODAI_AI_PATH, dir, filename);
   console.log('filepath', filepath);
   return filepath;
 }
@@ -26,7 +25,7 @@ const getDirpath = (dir) => {
     filepath = resolve(resourcesPath, dir);
   }
 
-  if (LEMON_AI_PATH) {
+  if (SODAI_AI_PATH) {
     filepath = resolve(LEMON_AI_PATH, dir);
   }
   return filepath;

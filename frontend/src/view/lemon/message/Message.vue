@@ -12,7 +12,7 @@
   </div>
   <!-- 停止 -->
   <div v-else-if="message?.meta?.action_type === 'stop'" class="stop">
-    <Stop/> <span>LemonAI {{ $t('stop_task') }}</span>
+    <Stop/> <span>Sodai {{ $t('stop_task') }}</span>
   </div>
   <!-- 任务异常 完成 -->
   <div v-else-if="message?.meta?.action_type === 'error'" class="error">

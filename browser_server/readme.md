@@ -1,24 +1,23 @@
-the project use python environment
+The project uses Python environment
 
-# install
+# Install
 
 ```bash
 cd /path/to/browserUse
 ```
-you can use uv or pip or other to install 
+You can use uv, pip, or others to install
 
-## uv install：
+## UV Install:
 
-recommend uv to manage python environment
+Recommend using uv to manage Python environment
 
-
-create virtual environment
+Create virtual environment
 
 ```
 uv venv 
 ```
 
-activate virtual environment
+Activate virtual environment
 
 + Linux/macOS：
 
@@ -26,13 +25,13 @@ activate virtual environment
 source .venv/bin/activate
 ```
 
-+ windows
++ Windows
 
 ```
 .venv\Scripts\activate
 ```
 
-install requirements
+Install requirements
 
 + pyproject.toml：
 
@@ -46,41 +45,35 @@ uv pip install .
 uv pip install -r requirements.txt
 ```
 
-## Pip install：
+## Pip install:
 
-acitavate virtual environment
-
+Activate virtual environment
 
 ```
 pip install -r requirements.txt
 ```
 
-
-## browser plugins install:
+## Browser plugins install:
 
 ```bash
-# before this step, you need to activate virtual environment
+# Before this step, you need to activate virtual environment
 patchright install chromium --with-deps --no-shell
 ```
 
-
-
-# launch
+# Launch
 
 ```bash
 cd /path/to/browser_server
 ```
 
 ```bash
-# activate virtual environment
+# Activate virtual environment
 ```
 
-```
+```bash
 python src/server.py
 ```
 
+# Tips:
 
-
-# tips:
-
-the model must support tool calling and function calling, vision mode only supports gpt-4o
+The model must support tool calling and function calling. Vision mode only supports gpt-4o

@@ -1,27 +1,25 @@
-#  Baidu&Bing search support for
+# Baidu & Bing Search Support
 
-for baidu and bing search support on client
+For Baidu and Bing search support on client
 
+## Installation
 
-
-##  Installation
-
-before to package,run this commond in project root directory:
+Before packaging, run this command in the project root directory:
 
 ```
 npx playwright install chromium
 ```
 
-##  Copy
+## Copy
 
-move chromium to project resources
+Move Chromium to project resources
 
-for Mac:
+For Mac:
 
 ```
 cp -r ~/Library/Caches/ms-playwright/chromium_headless_shell-*/* resources/browser/chromium/
 ```
 
-for windows is the same
+For Windows, it is the same.
 
-and complie your project
+Then compile your project.

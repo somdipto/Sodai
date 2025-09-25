@@ -1,8 +1,8 @@
 export default {
   // Interface de Login
   auth: {
-    loginToLemonAI: "Entrar no LemonAI",
-    registerLemonAIAccount: "Registrar uma conta LemonAI",
+    loginToSodai: "Entrar no Sodai",
+    registerSodaiAccount: "Registrar uma conta Sodai",
     verifyEmail: "Verificar e-mail",
     resetPassword: "Redefinir senha",
     loginWithGoogle: "Entrar com Google",

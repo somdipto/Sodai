@@ -28,8 +28,8 @@ export default {
     },
   },
   auth: {
-    loginToLemonAI: "登录 LemonAI",
-    registerLemonAIAccount: "注册 LemonAI 账户",
+    loginToSodai: "登录 Sodai",
+    registerSodaiAccount: "注册 Sodai 账户",
     verifyEmail: "验证邮箱",
     resetPassword: "重置密码",
     loginWithGoogle: "使用 Google 登录",
@@ -639,7 +639,7 @@ export default {
     },
     about: {
       title: "关于",
-      lemonAI: "LemonAI",
+      sodai: "Sodai",
       checkUpdate: "检查更新",
       officialWebsite: "官方网站",
       view: "查看",

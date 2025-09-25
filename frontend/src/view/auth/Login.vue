@@ -108,13 +108,9 @@ const verifyForm = reactive({
 const pageTitle = computed(() => {
   switch (activeKey.value) {
     case 'login':
-      return t('auth.loginToLemonAI');
-    case 'register':
-      return t('auth.registerLemonAIAccount');
-    case 'verify':
-      return t('auth.verifyEmail');
-    case 'smsLogin':
-      return t('auth.loginToLemonAI');
+      return t('auth.loginToSodai');
+return t('auth.registerSodaiAccount');
+return t('auth.loginToSodai');
     default:
       return t('auth.resetPassword');
   }

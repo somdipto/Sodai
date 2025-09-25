@@ -201,7 +201,7 @@
 
   //通知客户端 支付成功 使用自定义协议
   const notifyClient = (status) => {
-    const deeplink = `lemonai://pay-result?orderId=${order.value.id}&amount=${order.value.amount_total}&currency=${order.value.currency}&status=${status}`
+    const deeplink = `sodai://pay-result?orderId=${order.value.id}&amount=${order.value.amount_total}&currency=${order.value.currency}&status=${status}`
     window.location.href = deeplink
   }
   </script>

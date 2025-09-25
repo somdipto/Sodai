@@ -1,8 +1,8 @@
 export default {
   //登录界面
   auth: {
-    loginToLemonAI: "Iniciar sesión en LemonAI",
-    registerLemonAIAccount: "Registrar cuenta LemonAI",
+    loginToSodai: "Iniciar sesión en Sodai",
+    registerSodaiAccount: "Registrar cuenta Sodai",
     verifyEmail: "Verificar correo electrónico",
     resetPassword: "Restablecer contraseña",
     loginWithGoogle: "Iniciar sesión con Google",

@@ -91,8 +91,8 @@ const  isLogin = computed(() => {
 });
 
 const handleVersionInfo = () => {
- //https://github.com/hexdocom/lemonai/releases
- window.open("https://github.com/hexdocom/lemonai/releases", '_blank');
+ //https://github.com/hexdocom/sodai/releases
+ window.open("https://github.com/hexdocom/sodai/releases", '_blank');
 }
 
 //获取用户信息 getUserInfo

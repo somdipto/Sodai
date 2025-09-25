@@ -2,7 +2,7 @@
   <div class="sidebar-header">
     <div class="icon">
       <img src="@/assets/image/lemon.jpg" alt="" />
-      LemonAI
+      Sodai
     </div>
     <div class="sidebar-header-btn">
       <button class="menu-button" @click.stop="toggleCollapse">

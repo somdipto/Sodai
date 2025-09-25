@@ -10,14 +10,14 @@ const https = require('https');
 const DOCKER_SETUP_DONE_KEY = 'dockerSetupDone';
 
 // Complete image name and tag
-const REQUIRED_DOCKER_IMAGE = 'hexdolemonai/lemon-runtime-sandbox:latest';
+const REQUIRED_DOCKER_IMAGE = 'hexdosodai/sodai-runtime-sandbox:latest';
 
 // Complete image package download address (you need to provide the actual download URL)
-// Please replace with the actual network address where your lemon_runtime_sandbox.tar file is stored
+// Please replace with the actual network address where your sodai_runtime_sandbox.tar file is stored
 const DOCKER_IMAGE_TAR_URL = '';
 
 // Complete locally saved image package file name
-const DOWNLOADED_IMAGE_FILE_NAME = 'lemon_runtime_sandbox.tar';
+const DOWNLOADED_IMAGE_FILE_NAME = 'sodai_runtime_sandbox.tar';
 
 // --- Internal State (Set during initialization) ---
 let store;
@@ -28,11 +28,11 @@ let userDataPath;
 function getDockerImageFileName() {
     let arch = process.arch;
     if (arch === 'x64' ) {
-        return 'lemon_runtime_sandbox-x64.tar';
+        return 'sodai_runtime_sandbox-x64.tar';
     } else if (arch === 'arm64') {
-        return 'lemon_runtime_sandbox-arm64.tar';
+        return 'sodai_runtime_sandbox-arm64.tar';
     } else {
-        return 'lemon_runtime_sandbox-x64.tar';
+        return 'sodai_runtime_sandbox-x64.tar';
     }
 }
 
@@ -82,7 +82,7 @@ async function checkDockerAvailability(webContents) {
 
 
 // Install Docker
-//http://lemon-ai.oss-cn-beijing.aliyuncs.com/docker/Docker-windows.exe
+//http://sodai-ai.oss-cn-beijing.aliyuncs.com/docker/Docker-windows.exe
 async function installDocker(webContents) {
     try {
         // Step 1: Detect system
@@ -105,7 +105,7 @@ async function installDocker(webContents) {
         }
 
         if (download_file_name !== "") {
-            // const download_url = `https://lemon-ai.oss-cn-beijing.aliyuncs.com/docker/${download_file_name}`;
+            // const download_url = `https://sodai-ai.oss-cn-beijing.aliyuncs.com/docker/${download_file_name}`;
             // const downloadedFilePath = path.join(userDataPath, download_file_name);
             
             // // Download file

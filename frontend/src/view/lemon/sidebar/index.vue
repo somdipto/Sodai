@@ -6,7 +6,7 @@
       </span>
       <div class="icon"> 
         <img src="@/assets/image/lemon.jpg" alt="" />
-        LemonAI
+        Sodai
       </div>
     </button>
     <div class="sidebar-container" @click="closeSidebar" v-if="!isCollapsed">

@@ -114,8 +114,8 @@ class LLM {
 
     if (config.url && config.url.indexOf('openrouter.ai') !== -1) {
       Object.assign(config.headers, {
-        "HTTP-Referer": 'https://lemonai.cc',
-        "X-Title": "LemonAI"
+        "HTTP-Referer": 'https://sodai.cc',
+"X-Title": "Sodai"
       })
     }
     // console.log('config', config);
