@@ -61,19 +61,22 @@ onMounted(async () => {
       const isClient = import.meta.env.VITE_IS_CLIENT === 'true';
       const redirectUri = isClient
       ? import.meta.env.VITE_GOOGLE_REDIRECT_URI_ELECTRON
-      : 'http://localhost:5005/api/users/auth/google'; // Electron 主进程处理
+      : import.meta.env.VITE_GOOGLE_REDIRECT_URI || 'http://localhost:5005/auth/google';
 
-      // const redirectUri = 'http://localhost:5005/api/users/auth/google';
-      console.log("redirectUri",redirectUri)
-      await auth.googleAuth(urlParams.get('code'),redirectUri);
+      console.log("redirectUri", redirectUri);
+      console.log("code", urlParams.get('code'));
+      
+      await auth.googleAuth(urlParams.get('code'), redirectUri);
       percent.value = 100;
       message.success(t('auth.loginSuccessful'));
       setTimeout(() => router.push({ name: 'app' }), 500);
     } catch (error) {
+      console.error('Google auth callback error:', error);
       message.error(t('auth.loginFailed') + ': ' + error.message);
       setTimeout(() => router.push({ name: 'login' }), 1000);
     }
   } else {
+    message.error(t('auth.loginFailed') + ': No authorization code received');
     setTimeout(() => router.push({ name: 'login' }), 1000);
   }
 });

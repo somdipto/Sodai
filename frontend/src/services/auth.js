@@ -159,7 +159,10 @@ const service = {
   async googleAuth(code, redirect_uri) {
     try {
       const uri = "/api/users/google-auth";
+      console.log('Sending Google auth request:', { code, redirect_uri });
       const response = await http.post(uri, { code, redirect_uri });
+      
+      console.log('Google auth response:', response);
       
       if (response.data && response.data.access_token) {
         localStorage.setItem('access_token', response.data.access_token);
