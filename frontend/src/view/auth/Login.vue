@@ -291,13 +291,18 @@ const handleGoogleLogin = () => {
     const isClient = import.meta.env.VITE_IS_CLIENT === 'true';
     const redirectUri = isClient
       ? import.meta.env.VITE_GOOGLE_REDIRECT_URI_ELECTRON// Electron 主进程处理
-      : 'http://localhost:5005/api/users/auth/google'; 
-    const clientId = '973572698649-hbp15ju1nhlsja1k2gbqktmrulk0hopp.apps.googleusercontent.com';
+      : import.meta.env.VITE_GOOGLE_REDIRECT_URI || 'http://localhost:5005/auth/google'; 
+    const clientId = import.meta.env.VITE_GOOGLE_CLIENT_ID || '973572698649-hbp15ju1nhlsja1k2gbqktmrulk0hopp.apps.googleusercontent.com';
     const scope = encodeURIComponent('profile email');
     const responseType = 'code';
-    const googleAuthUrl = `https://accounts.google.com/o/oauth2/auth?client_id=${clientId}&redirect_uri=${redirectUri}&scope=${scope}&response_type=${responseType}&access_type=offline&prompt=consent`;
+    const googleAuthUrl = `https://accounts.google.com/o/oauth2/auth?client_id=${clientId}&redirect_uri=${encodeURIComponent(redirectUri)}&scope=${scope}&response_type=${responseType}&access_type=offline&prompt=consent`;
+    
+    console.log('Google Auth URL:', googleAuthUrl);
+    console.log('Redirect URI:', redirectUri);
+    
     window.location.href = googleAuthUrl;
   } catch (error) {
+    console.error('Google login error:', error);
     message.error(t('auth.googleLoginFailed'));
   } finally {
     loading.value = false;

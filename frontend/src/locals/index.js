@@ -1,7 +1,6 @@
 // index.js
 import { createI18n } from 'vue-i18n'
 import en from './lang/en'
-import zh from './lang/zh'
 import de from './lang/de'
 import es from './lang/es'
 import fr from './lang/fr'
@@ -14,7 +13,6 @@ import vi from './lang/vi'
 
 const messages = {
   en,
-  zh,
   de,
   es,
   fr,
