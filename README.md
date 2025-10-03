@@ -7,10 +7,6 @@
 **The first full-stack, open-source, agentic AI framework**  
 *Fully local alternative to Manus & Genspark AI*
 
-[![License](https://img.shields.io/github/license/hexdocom/sodai)](https://github.com/hexdocom/sodai/blob/main/LICENSE) 
-[![Docker Pulls](https://img.shields.io/docker/pulls/hexdosodai/sodai)](https://hub.docker.com/r/hexdosodai/sodai) 
-[![Contributors](https://img.shields.io/github/contributors/hexdocom/sodai)](https://github.com/hexdocom/sodai/graphs/contributors)
-
 </div>
 
 ## 🚀 Overview
